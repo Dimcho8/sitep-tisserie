@@ -1,28 +1,27 @@
 *{
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    box-sizing: border-box;
+    margin: 0;;
     font-family: 'popins',sans-serifserif;
 
 }
+body{
+    background:url(assets/patsr.png) ;
+}
 .header{
     width: 100%;
-   background-color:  #ffe5f1; ;
-   padding: 10px;
+   background-color:  #6f2642; 
    text-align: center;
    text-transform: uppercase;
    display: inline-block;
-   padding: 20px 10%;
 
-
-   
+}
+.center{
+    align-items: center;
 }
 .flex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 30px;
+
 
 }
 .between{
@@ -38,31 +37,81 @@
 }
 .logo img{
     width: 100px;
+    border-radius: 20px 20px;
 }
 
-.btn1{
-     background-color: #6f2642 ;
+
+  .btn1 {
+    background-color: #ffe5f1 ;
     padding: 16px 32px;
-    color:  #ffe5f1; ;
+    color:  #6f2642;
     text-decoration: none;
- justify-content: space-between;
  justify-content: center;
- border-radius: 40px;
-
-
+    
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: #ffe5f1 ;
+    box-shadow:rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  .btn1:hover {
+    letter-spacing: 3px;
+    background-color:#6f2642;
+    color: white;
+    box-shadow: white 0px 7px 29px 0px;
+  }
+  
+  .btn1:active {
+    letter-spacing: 3px;
+    background-color:#6f2642;
+    color: hsl(0, 0%, 100%);
+    box-shadow: black 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
   }
 
-  .rec {
-    margin: 100px;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-
-  }
-  ul{
-    list-style-type:none;
-    
-    
+  #content{
+    background-color:#ffe5f1;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    background:url(assets/patt.jpg) ;
+    background-size:cover;
+    background-position: center;
+    align-items: center;
 }
-  
-  
+.card {
+justify-content: space-around;
+    margin: 50px 0 50px 0 ;
+    background-color: #ffe5f1  ;
+    width: 30%;
+    margin-top: 22px;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 12px #6f2642  ;
+    font-family: "Karla", sans-serif;
+
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h2{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+.flex1{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
