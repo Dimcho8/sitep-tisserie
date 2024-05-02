@@ -5,7 +5,7 @@
 
 }
 body{
-    background:url(assets/patsr.png) ;
+    
 }
 .header{
     width: 100%;
@@ -39,6 +39,68 @@ body{
     width: 100px;
     border-radius: 20px 20px;
 }
+.acc{
+    position: relative;
+    width: 100ù;
+    justify-content: space-between;
+    height: 60vh;
+    background:url(assets/patt.jpg) ;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+    
+}
+.acc-content{
+    max-width: 600px;
+}
+
+.acc-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+.acc-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    color:#6f2642 ;
+
+}
+.acc-content p {
+    font-size: 20px;
+    color:black ;
+}
+.acc-content .btn{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+
+}
+.btn2 a{
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid ;
+    border-radius: 50%;
+    font-size: 20px;
+    color: v;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+}
+.btn2 a:hover{ 
+    background-color: #6f2642;
+    color: white;
+    box-shadow: 0 0 20px #6f2642;
+}
 
 
   .btn1 {
@@ -69,7 +131,7 @@ body{
   .btn1:active {
     letter-spacing: 3px;
     background-color:#6f2642;
-    color: hsl(0, 0%, 100%);
+    color:#6f2642(0, 0%, 100%);
     box-shadow: black 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
@@ -82,7 +144,8 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
-    background:url(assets/patt.jpg) ;
+    background: ;
+    background-color: #6f2642;
     background-size:cover;
     background-position: center;
     align-items: center;
@@ -97,6 +160,7 @@ justify-content: space-around;
     border-radius: 16px;
     box-shadow: 4px 4px 12px #6f2642  ;
     font-family: "Karla", sans-serif;
+    
 
 }
 .card img{
@@ -114,4 +178,194 @@ justify-content: space-around;
     display: flex;
     justify-content: space-around;
     margin: 50px;
+}
+.btn2 {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    overflow: hidden;
+    background: #ff013c;
+    color: ghostwhite;
+    text-decoration: none;
+   }
+   
+   .btn2 span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+   }
+   
+   .bnt2:hover span {
+    color: #6f2642;
+   }
+   
+   .btn2::before,
+   .btn2::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   .btn2::before {
+    content: "";
+    background: #6f2642;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   .btn2:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+
+    
+
+#acc{
+    background-color:#ffe5f1;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #6f2642;
+    background-size:cover;
+    background-position: center;
+    align-items: center;
+
+}
+.cli{
+    justify-content: space-around;
+    margin: 50px 0 50px 0 ;
+    background-color: #ffe5f1  ;
+    width: 30%;
+    margin-top: 22px;
+    padding: 16px;
+    border-radius: 13px;
+    box-shadow: 4px 4px 12px #6f2642  ;
+    font-family: "Karla", sans-serif;
+
+}
+.cli:hover {
+    letter-spacing: 3px;
+    background-color:#6f2642;
+    color: white;
+    box-shadow: white 0px 7px 29px 0px;
+  }
+  
+  .cli:active {
+    letter-spacing: 3px;
+    background-color:#6f2642;
+    color: hsl(0, 0%, 100%);
+    box-shadow: black 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+
+ 
+
+
+
+
+  #serv{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    background:url(assets/bgpt.jpg) ;
+    background-color: #6f2642;
+    background-size:cover;
+    align-items: center;
+
+}
+.serv1 {
+justify-content: space-around;
+    margin: 50px 0 50px 0 ;
+    background-color: #ffe5f1  ;
+    width: 30%;
+    margin-top: 22px;
+    padding: 16px;
+    border-radius: 13px;
+    box-shadow: 4px 4px 12px #6f2642  ;
+    font-family: "Karla", sans-serif;
+    
+
+}
+.serv1 h2{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+.flex1{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+#tem{
+    background-color: #6f2642;
+
+}
+
+.temm{
+    font-size: 20px;
+    color:black ;
+}
+.btn3 {
+    padding: 1rem 2rem;
+    font-weight: 700;
+    background:#6f2642(255, 255, 255);
+    color: blueviolet;
+    border-bottom: 5px solid blueviolet;
+    border-right: 5px solid blueviolet;
+    border-top: 5px solid #6f2642;
+    border-left: 5px solid #6f2642;
+    transition-duration: 1s;
+    transition-property: border-top, 
+       border-left, 
+       border-bottom,
+       border-right,
+       box-shadow;
+   }
+   
+   .btn3:hover {
+    border-top: 2px solid blueviolet;
+    border-left: 2px solid blueviolet;
+    border-bottom: 2px solid rgb(238, 103, 238);
+    border-right: 2px solid rgb(238, 103, 238);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+   }
+   .btn3 a{
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid ;
+    border-radius: 100%;
+    font-size: 20px;
+    color: #6f2642;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+}
+.btn3 a:hover{ 
+    background-color: rgb;
+    color: white;
+    box-shadow: 0 0 20px rgb;
 }
