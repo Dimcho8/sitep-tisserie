@@ -12,41 +12,49 @@
             {
                 "nom": "Éclair au Chocolat",
                 "description": "Laissez-vous tenter par notre éclair au chocolat, une délicieuse pâtisserie faite maison. Une coque croquante et une crème onctueuse pour une explosion de saveurs.",
-              "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/eclair-chocolat.webp?v=1714150243039"
+              "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/eclair-chocolat.webp?v=1714150243039",
+              "prix": "8,88€"
             },
             {
                 "nom": "Macarons Variés",
                 "description": "Découvrez nos macarons aux saveurs variées, préparés avec soin pour satisfaire toutes les papilles. Des couleurs vives et des combinaisons de goûts uniques.",
-              "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/macarons.jpeg?v=1714150244817"
+              "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/macarons.jpeg?v=1714150244817",
+              "prix": "17,88€"
             },
             {
                 "nom": "Tarte aux Fruits Frais",
                 "description": "Savourez notre tarte aux fruits frais, une création légère et fruitée. Des fruits de saison disposés avec art sur une délicieuse pâte sablée.",
-              "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/Tarte-aux-fruits.jpg?v=1714150246783"
+              "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/Tarte-aux-fruits.jpg?v=1714150246783",
+              "prix": "26,88€"
             },
             {
                 "nom": "Millefeuille Vanille-Framboise",
                 "description": "Plongez dans la gourmandise avec notre millefeuille à la vanille et à la framboise. Des couches croustillantes et crémeuses pour une expérience gustative exquise.",
-              "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/millefeuille-framboise.jpg?v=1714150245763"
+              "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/millefeuille-framboise.jpg?v=1714150245763",
+              "prix": "28,88€"
             },
             {
                 "nom": "Chausson aux Pommes",
                 "description": "Retrouvez le plaisir réconfortant de notre chausson aux pommes. Une pâte feuilletée croustillante et une garniture généreuse aux pommes fondantes.",
-              "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/chausson-pomme.webp?v=1714150241823"
+              "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/chausson-pomme.webp?v=1714150241823",
+              "prix": "17,88€"
             }
         ],
         "services": [
             {
                 "nom": "Gâteaux Sur Mesure",
-                "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables."
+                "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables.",
+                "images":"https://www.passom-patisserie.com/scripts/files/63f9fe93603413.18255852/img_20220614_215213.jpg"
             },
             {
                 "nom": "Cours de Pâtisserie",
-                "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations."
+                "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations.",
+                "images":"https://chefsquare.fr/media/catalog/product/cache/ba664c13fa4d9dee95ca9c0cf96f6c50/a/t/atelier-enfant-lyon_base1.jpg"
             },
             {
                 "nom": "Service Traiteur",
-                "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions."
+                "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions.",
+                "images":"https://static.wixstatic.com/media/369974_2bc349d91f4d41feb47df6befcf7fad3~mv2.jpg/v1/fill/w_640,h_224,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/369974_2bc349d91f4d41feb47df6befcf7fad3~mv2.jpg"
             }
         ],
         "temoignages": [

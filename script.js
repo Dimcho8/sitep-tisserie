@@ -1,3 +1,20 @@
+// je recupere le header dans le document 
+let header = document.querySelector("header")
+// je recupere aussi la baniere :
+let ban = document.querySelector(".acc")
+
+// j'ecoute le scroll : 
+window.addEventListener("scroll", () => {
+    console.log("j'ai scrollé")
+    if (window.scrollY > ban.clientHeight - 100) {
+        header.classList.add("headerColored")
+    } else {
+        header.classList.remove("headerColored")
+    }
+
+})
+
+
 
 fetch("patisseries.json")
 
@@ -14,19 +31,7 @@ fetch("patisseries.json")
         temoignages(data.entreprise.temoignages);
     });
 
-function services(tableauServices) {
-    tableauServices.forEach(services => {
-        document.querySelector("#serv").innerHTML +=
 
-            `
-            <div class="serv1">
-            <h2>${services.nom} </h2>
-            <p>${ services.description} </p>
-
-            </div>
-            `
-    })
-}
 function produits(tableauProduits) {
     tableauProduits.forEach(produits => {
         document.querySelector("#content").innerHTML +=
@@ -34,18 +39,38 @@ function produits(tableauProduits) {
             `
             <div data-aos="flip-left"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"class="card">
+            data-aos-duration="2000"class="card ">
             <h2>${produits.nom} </h2>
             <img src="${produits.images}">
             <p>${produits.description}</p>
-            <a class="btn2" href="#"></i><span>Commander</span>
-                </a>
+            <a class="btn2" href="#"></i><span>Ajouté à la liste d'articles</span><p>${produits.prix}</p>
+             </a>
+            
             </div>
             `
     })
 }
 
+function services(tableauServices) {
+    tableauServices.forEach(services => {
+        document.querySelector("#serv").innerHTML +=
 
+            `
+            <div class="serv1">
+            <img src="${services.images}">
+            <div class="info">
+            <h2>${services.nom} </h2>
+            <p>${services.description} </p>
+            <a href="#" class="btn3">En savoir plus</a>
+
+            
+            </div>
+
+
+            </div>
+            `
+    })
+}
 
 function clients(tableauAvantagesClients) {
     tableauAvantagesClients.forEach(avantagesClients => {
@@ -64,7 +89,7 @@ function clients(tableauAvantagesClients) {
 
     })
 }
-function temoignages (tableauTemoignages) {
+function temoignages(tableauTemoignages) {
     tableauTemoignages.forEach(temoignages => {
         document.querySelector("#tem").innerHTML +=
 
