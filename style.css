@@ -13,6 +13,7 @@ body{
    text-align: center;
    text-transform: uppercase;
    display: inline-block;
+   
 
 }
 .center{
@@ -323,49 +324,4 @@ justify-content: space-around;
 .temm{
     font-size: 20px;
     color:black ;
-}
-.btn3 {
-    padding: 1rem 2rem;
-    font-weight: 700;
-    background:#6f2642(255, 255, 255);
-    color: blueviolet;
-    border-bottom: 5px solid blueviolet;
-    border-right: 5px solid blueviolet;
-    border-top: 5px solid #6f2642;
-    border-left: 5px solid #6f2642;
-    transition-duration: 1s;
-    transition-property: border-top, 
-       border-left, 
-       border-bottom,
-       border-right,
-       box-shadow;
-   }
-   
-   .btn3:hover {
-    border-top: 2px solid blueviolet;
-    border-left: 2px solid blueviolet;
-    border-bottom: 2px solid rgb(238, 103, 238);
-    border-right: 2px solid rgb(238, 103, 238);
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
-   }
-   .btn3 a{
-
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid ;
-    border-radius: 100%;
-    font-size: 20px;
-    color: #6f2642;
-    text-decoration: none;
-    margin: 30px 15px 30px 0;
-
-}
-.btn3 a:hover{ 
-    background-color: rgb;
-    color: white;
-    box-shadow: 0 0 20px rgb;
 }
