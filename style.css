@@ -193,62 +193,9 @@ justify-content: space-around;
     margin-bottom: 10px;
     padding: 8px;
     font-family: 'popins',sans-serifserif;
-    color:btn2 {
-        --glow-color: rgb(217, 176, 255);
-        --glow-spread-color: rgba(191, 123, 255, 0.781);
-        --enhanced-glow-color: rgb(231, 206, 255);
-        --btn-color: rgb(100, 61, 136);
-        border: .25em solid var(--glow-color);
-        padding: 1em 3em;
-        color: var(--glow-color);
-        font-size: 15px;
-        font-weight: bold;
-        background-color: var(--btn-color);
-        border-radius: 1em;
-        outline: none;
-        box-shadow: 0 0 1em .25em var(--glow-color),
-              0 0 4em 1em var(--glow-spread-color),
-              inset 0 0 .75em .25em var(--glow-color);
-        text-shadow: 0 0 .5em var(--glow-color);
-        position: relative;
-        transition: all 0.3s;
-        }
-      
-      .btn2::after {
-        pointer-events: none;
-        content: "";
-        position: absolute;
-        top: 120%;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: var(--glow-spread-color);
-        filter: blur(2em);
-        opacity: .7;
-        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
-      }
-      
-      .btn2:hover {
-        color: var(--btn-color);
-        background-color: var(--glow-color);
-        box-shadow: 0 0 1em .25em var(--glow-color),
-              0 0 4em 2em var(--glow-spread-color),
-              inset 0 0 .75em .25em var(--glow-color);
-      }
-      
-      .btn2:active {
-        box-shadow: 0 0 0.6em .25em var(--glow-color),
-              0 0 2.5em 2em var(--glow-spread-color),
-              inset 0 0 .5em .25em var(--glow-color);
-      }
-      ;
-    font-size: large;
-}
-.flex1{
-    display: flex;
-    justify-content: space-around;
-    margin: 50px;
-}
+
+ }
+
 .btn2 {
     outline: none;
     cursor: pointer;
@@ -262,7 +209,7 @@ justify-content: space-around;
     font-weight: 700;
     font-size: 13px;
     overflow: hidden;
-    background: #ff013c;
+    background: #333;
     color: ghostwhite;
     text-decoration: none;
     border-radius: 16px;
@@ -271,7 +218,7 @@ justify-content: space-around;
    .btn2 span {
     position: relative;
     z-index: 10;
-    transition: color 0.4s;
+    transition: color 0.2s;
    }
    
    .bnt2:hover span {
@@ -301,7 +248,93 @@ justify-content: space-around;
     transform: translate3d(100%, 0, 0);
    }
 
-    
+   #container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(assets/bgpg.jpg)
+}
+#container .card1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 350px;
+    background-color: #6f2642;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0,15);
+    transition: 0.7s;
+
+}
+#container .card1:hover {
+height: 400px;
+
+}
+#container .card1 .imgBx {
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    transition: 0.7s;
+}
+#container .card1:hover .imgBx {
+    top:-100px;
+    scale:0.75;
+    box-shadow: 0 15px 45px  rgba(0,0,0,0,15) ;
+}
+#container .card1 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#container .card1 .content {
+    position: absolute;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    top: 250px;
+    height: 25px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#container .card1:hover .content {
+    top: 130px;
+    height: 250px;
+
+}
+#container .card1 .content h2{
+    font-size: 1.5rem;
+    font-weight: 1000px;
+    color:#ffe5f1;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+#container .card1 .content p{
+    color: #ffe5f1;
+}
+#container .card1 .content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #6f2642;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+       
 
 #acc{
     background-color:#ffe5f1;

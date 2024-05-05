@@ -37,9 +37,7 @@ function produits(tableauProduits) {
         document.querySelector("#content").innerHTML +=
 
             `
-            <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"class="card ">
+            <div data-aos="zoom-out-down"class="card ">
             <h2>${produits.nom} </h2>
             <img src="${produits.images}">
             <p>${produits.description}</p>
@@ -56,7 +54,7 @@ function services(tableauServices) {
         document.querySelector("#serv").innerHTML +=
 
             `
-            <div class="serv1">
+            <div data-aos="flip-left" class="serv1">
             <img src="${services.images}">
             <div class="info">
             <h2>${services.nom} </h2>
@@ -71,17 +69,38 @@ function services(tableauServices) {
             `
     })
 }
+function temoignages(tableauTemoignages) {
+    tableauTemoignages.forEach(temoignages => {
+        document.querySelector("#container").innerHTML +=
 
+            `
+            <div data-aos="zoom-in"  class="card1" >
+            <div  class="imgBx">
+            <img src="${temoignages.images}">
+         
+            </div>
+            <div class="content">
+            <h2>${temoignages.prenom} </h2>
+
+            <p>${temoignages.typeExperience} </p>
+            <p>${temoignages.commentaire}</p>
+            <a href="#">${temoignages.note}</a>
+         
+             </div>
+            
+            </div>
+            `
+    })
+}
 function clients(tableauAvantagesClients) {
     tableauAvantagesClients.forEach(avantagesClients => {
         document.querySelector("#acc").innerHTML +=
 
             `
-            <div  data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="300"
-            data-aos-offset="0" class=cli>
-            <h2>${avantagesClients}</h2>
+            <div  data-aos="flip-left" class=cli>
+            
+            <p>${avantagesClients}</p>
+            <a href="#">En savoir plus</a>
         </div>
     
             
@@ -89,19 +108,6 @@ function clients(tableauAvantagesClients) {
 
     })
 }
-function temoignages(tableauTemoignages) {
-    tableauTemoignages.forEach(temoignages => {
-        document.querySelector("#tem").innerHTML +=
 
-            `
-            <p data-aos="fade-up-left"class="temm">
-            <span>${temoignages.prenom} </spab>
-            <span>${temoignages.typeExperience} </span>
-            <span>${temoignages.commentaire}</span>
-            <span>${temoignages.note}</span>
-            </p>
-            `
-    })
-}
 AOS.init();
 
